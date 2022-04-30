@@ -1,0 +1,12 @@
+{
+  "name": "Chat-Simples-com-Socket-",
+  "version": "1.0.0",
+  "description": "Simple chat feito em node usando Socket",
+  "main": "index.js",
+  "repository": "https://github.com/ItaloCobains/Chat-Simples-com-Socket-",
+  "author": "ItaloCobains <monokatchaleger@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.1"
+  }
+}
