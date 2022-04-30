@@ -8,6 +8,26 @@
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Chat</h1>
+    <div class="page" id="loginPage">
+        <h1>Qual seu nome ?</h1>
+        <input type="text" id="loginNameInput">
+    </div>
+    <div class="page" id="chatPage">
+        <div class="chatArea">
+            <ul class="chatList">
+                <li class="m-status">Italo entro no chat</li>
+                <li class="m-status">Italo saiu do chat</li>
+                <li class="m-txt"><span class="me">Italo</span>Opa, tudo bem ?</li>
+            </ul>
+            <ul class="userList">
+                <li>italo1 (você)</li>
+                <li>italo2</li>
+                <li>italo3</li>
+            </ul>
+        </div>
+        <div class="chatInput">
+            <input type="text" id="chatTextInput" placeholder="Digite uma mensagem (e aperte ENTER)">
+        </div>
+    </div>
 </body>
 </html>
