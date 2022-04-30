@@ -3,6 +3,7 @@ Simples chat feito em node usando Socket.
 
 ## Dependencies:
     -express
+    -socket.io
 
 ## Como instalar as Dependencies:
 ```
