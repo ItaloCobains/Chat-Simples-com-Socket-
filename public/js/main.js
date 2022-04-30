@@ -46,6 +46,18 @@ loginInput.addEventListener('keyup', (e) => {
     }
 });
 
+textInput.addEventListener('keyup', (e) => {
+    if (e.keyCode === 13) {
+        let txt = textInput.value.trim();
+        textInput.value = '';
+
+        if (txt != '') {
+            socket.emit('send-msg', txt);
+            addMessage('msg', username, txt);
+        }
+    }
+})
+
 socket.on('user-ok', (list) => {
     loginPage.style.display = 'none';
     chatPage.style.display = 'flex';
@@ -69,4 +81,8 @@ socket.on('list-update', (data) => {
     userList = data.list;
     renderUserList();
 
+});
+
+socket.on('show-msg', (data) => {
+    addMessage('msg', data.username, data.message);
 });
